@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+home
+{% endblock %}
+
+{% block css %}
+{% static 'css/home.css' %}
+{% endblock %}
+
+{% block main %}
+    <div class="album py-5 bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 d-flex justify-content-around align-items-center">
+                    <div class="bd-placeholder-img rounded-circle my-5 bg-dark mr-4" id="profile-img"></div>
+                    <div id="profile-detail" class="row w-75">
+                        <div class="col-md-4 font-bold font-lg" id="profile-name">이름</div>
+                        <button class="btn btn-primary btn-md">팔로우</button>
+                        <div class="col-md-6"></div>
+                        <div class="row ml-1 my-3">
+                            <div class="col-md-4">게시물</div>
+                            <div class="col-md-4">팔로워</div>
+                            <div class="col-md-4">팔로우</div>
+                        </div>
+                        <div class="col-md-12 my-2">
+                            This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img width="100%" height="225" />
+                    </div>
+                </div><div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img width="100%" height="225" />
+                    </div>
+                </div><div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img width="100%" height="225" />
+                    </div>
+                </div><div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img width="100%" height="225" />
+                    </div>
+                </div><div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img width="100%" height="225" />
+                    </div>
+                </div><div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img width="100%" height="225" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
